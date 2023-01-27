@@ -10,8 +10,7 @@
 
 body{
     min-height: 100vh;
-    /* background: linear-gradient(#5bda24,#358eae); */
-    background-image: url('../Images/ashes.jpg');
+    background: linear-gradient(#62a4c7,#ebedf2);
     overflow-x: hidden;
 }
 
@@ -62,6 +61,22 @@ header ul ul{
     top: 60px;
     /* display: none; */
 }
+/* .MyWrites{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+.MyWrites span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.MyWrites:hover span{
+    transform: translateX(5px);
+}
+.MyWrites:hover p{
+    font-weight: 600;
+} */
 
 .dropdown-menu{
     
@@ -221,7 +236,7 @@ header ul li a.active
 }
 #profile_img{
     width: 40px;
-    border-radius: 50%;
+    border-radius: 90%;
     overflow: hidden;
     cursor: pointer;
     text-decoration: none;
@@ -238,25 +253,119 @@ header ul li a.active
     z-index: 10000;
     background: #fff;
 }
-.home .container{
-   margin-top: 30rem;
-   padding-bottom: 40em;
-   margin-left: 25%;
-   height: 40vh;
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 250px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+    padding-top: 10em;
+}
+.image-section{
+    float: right;
+    width: 40%;
+    
+}
+.image-section img{
+    width: 100%;
+    height: 70vh;
+    border-radius: 5px;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+
+}
+.content-section .content .button{
+    margin-top: 30px;
+}
+.content-section .content .button a{
+    background-color: #4769d8;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+
+}
+.content-section .content .button a:hover{
+    background-color: #2e54d3;
+    color: #fff;
+}
+.content-section .socials {
+    margin:40px 20px;
    
+
 }
-.home .container h3{
-    font-weight: 500;
-    font-size: 29px;
-   
+.content-section .socials i{
+    color: #a52a2a;
+    padding: 0 10px;
+    font-size: 30px;
+    
 }
-.poems1{
-    background-color: linear-gradient(#2b1055,#525252);
+.content-section .socials i:hover{
+    color: #3d3d3d;
 }
-/* /* .footer{
+@media screen and (max-width: 768px) {
+    .container{
+        width: 80%;
+        display: block;
+        margin:auto;
+        padding-top: 150px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .img-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button{
+        text-align: center;
+    }
+    .content-section .content .button a{
+        padding: 9px 30px;
+    }
+    .content-section .socials{
+        text-align: center;
+    }
+}
+ .footer{
     padding: 40px 0;
     background-color: #000;
-    height: 35vh;
+    height: 25vh; 
   
  } 
    
@@ -307,4 +416,4 @@ header ul li a.active
     text-align: center;
     font-size: 13px;
     color: #aaa;
-} */
+}

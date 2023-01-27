@@ -10,9 +10,11 @@
 
 body{
     min-height: 100vh;
-    /* background: linear-gradient(#5bda24,#358eae); */
-    background-image: url('../Images/ashes.jpg');
+    background: linear-gradient(#62a4c7,#ebedf2);
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -62,6 +64,22 @@ header ul ul{
     top: 60px;
     /* display: none; */
 }
+/* .MyWrites{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+.MyWrites span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.MyWrites:hover span{
+    transform: translateX(5px);
+}
+.MyWrites:hover p{
+    font-weight: 600;
+} */
 
 .dropdown-menu{
     
@@ -130,6 +148,7 @@ header ul li a.active
 }
 .Menu{
     cursor: pointer;
+  
 }
 .writes_img{
     width: 40px;
@@ -211,6 +230,7 @@ header ul li a.active
 }
 .sub-menu-link span{
     font-size: 22px;
+    color: #525252;
     transition: transform 0.5s;
 }
 .sub-menu-link:hover span{
@@ -238,27 +258,142 @@ header ul li a.active
     z-index: 10000;
     background: #fff;
 }
-.home .container{
-   margin-top: 30rem;
-   padding-bottom: 40em;
-   margin-left: 25%;
-   height: 40vh;
-   
-}
-.home .container h3{
+ .container
+ {
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0);
+ }
+ .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+ }
+ .container .content .left-side:before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    background: #afafb6;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+ }
+ .content .left-side .details .topic{
+    font-size: 18px;
     font-weight: 500;
-    font-size: 29px;
+ }
+ .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+ }
+ .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+ }
+ .content .left-side .details .text-one,
+ .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+ }
+ .container .content .right-side{
+    width: 75%; 
+    margin-left: 75px;
+    margin-bottom: 10px;
+ }
+ .container .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+ }
+ .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+ }
+ .right-side  .input-box input,
+ .right-side  .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 6px;
+    background: #f0f1f8;
+    padding: 0 15px;
+ }
+ .right-side .message-box{
+    min-height: 110px;
+    resize: none;
+
+ }
+ .right-side .button{
+    display: inline-block;
+    margin-top: 6px;
+ }
+ .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    background:#3e2093 ;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor:pointer;
+    transition: all 0.3s ease;
+ }
+ .button  input[type="button"]:hover{
+    background: #5029bc;
    
-}
-.poems1{
-    background-color: linear-gradient(#2b1055,#525252);
-}
-/* /* .footer{
+ }
+ @media screeen and (max-width:950px){
+    .container{
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+        margin-top: 70px;
+    }
+ }
+ @media screen and (max-width:820px){
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container .content .left-side:before{
+        display: none;
+    }
+    .container .content .right-side{
+        width: 100%;
+        margin-left:0;
+    }
+ }
+.footer{
     padding: 40px 0;
     background-color: #000;
-    height: 35vh;
+    height: 25vh;
   
- } 
+ }
    
 .footer .socials{
     text-align: center;
@@ -307,4 +442,4 @@ header ul li a.active
     text-align: center;
     font-size: 13px;
     color: #aaa;
-} */
+}
